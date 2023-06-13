@@ -34,6 +34,7 @@
 
 	if (typeof TogetherJS !== 'undefined') {
 		if (TogetherJS._loaded) {
+			TogetherJSConfig_hubBase = "https://togetherjs-hub.glitch.me/"
 			TogetherJS.on("close", function () {
 				TogetherJS(window);//open
 			});
