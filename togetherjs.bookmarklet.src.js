@@ -34,7 +34,6 @@
 
 	if (typeof TogetherJS !== 'undefined') {
 		if (TogetherJS._loaded) {
-			TogetherJSConfig_hubBase = "https://togetherjs-hub.glitch.me/"
 			TogetherJS.on("close", function () {
 				TogetherJS(window);//open
 			});
@@ -45,6 +44,7 @@
 		}
 	}
 	else {
+        TogetherJSConfig_hubBase = "https://togetherjs-hub.glitch.me/"
 		var script = document.createElement('script'),
 			scriptSrc = 'https://togetherjs.com/togetherjs-min.js';
 
